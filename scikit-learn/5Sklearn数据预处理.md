@@ -172,7 +172,70 @@ df['new_feature'] = df['feature1'] * df['feature2']
 ### 6、特征提取
 特征提取旨在从原始特征中提取出新的、更具表达力的特征。
 
-常见的特征提取方法包括: 主成分分析（PCA） 和 线性判别分析（LDA）。
+常见的特征提取方法包括: **主成分分析（PCA）** 和 **线性判别分析（LDA）**。
+
+#### 主成分分析（PCA）
+PCA 是一种常用的降维技术，它通过线性变换将数据从高维空间映射到低维空间，使得新特征（主成分）尽可能保留数据的方差。
+
+PCA 特别适用于特征数量过多的情况，可以有效降低计算复杂度。
+
+实例
+```python
+from sklearn.decomposition import PCA
+
+# 假设 X 是特征矩阵
+pca = PCA(n_components=2)  # 降维到 2 个主成分
+X_pca = pca.fit_transform(X)
+``` 
+PCA 主要用于两种场景：
+ - 降维：当特征过多时，使用 PCA 降维可以减少计算成本，同时保留数据的主要信息。
+ - 可视化：将高维数据映射到 2D 或 3D 空间，帮助我们可视化数据结构。
+
+#### 线性判别分析（LDA）
+LDA 是一种监督学习的降维方法，它旨在找到一个线性组合，使得不同类别之间的距离最大化，类别内的距离最小化。
+
+LDA 通常用于分类任务中。
+
+实例
+```python
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+# 假设 X 是特征矩阵，y 是目标变量
+lda = LinearDiscriminantAnalysis(n_components=2)  # 降维到 2 个线性判别组件
+X_lda = lda.fit_transform(X, y)
+```
+
+### 7、处理不平衡数据
+在分类问题中，如果数据集的各类别样本数量差异较大，可能会导致模型偏向预测多数类，从而影响模型的性能。
+
+常见的处理方法包括：
+#### 上采样（Over-sampling）
+通过增加少数类样本的数量，使得数据集更加平衡。
+
+常见的方法是使用 SMOTE（Synthetic Minority Over-sampling Technique） 算法。
+
+实例
+```python
+from imblearn.over_sampling import SMOTE
+
+smote = SMOTE()
+X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
+```
+#### 下采样（Under-sampling）
+通过减少多数类样本的数量，使得数据集更加平衡。
+
+实例
+```python
+from imblearn.under_sampling import RandomUnderSampler
+
+undersampler = RandomUnderSampler()
+X_resampled, y_resampled = undersampler.fit_resample(X_train, y_train)
+```
+
+
+
+
+
 
 
 
