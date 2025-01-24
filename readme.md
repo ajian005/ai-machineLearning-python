@@ -20,11 +20,11 @@
 ### 9 Sklearn自定义模型与功能
 [9Sklearn自定义模型与功能.md](scikit-learn/9Sklearn自定义模型与功能.md)
 ### 10 Sklearn模型保存与加载
-[1 Sklearn教程内容](scikit-learn/1Sklearn教程.md)
+[10Sklearn模型保存与加载.md](scikit-learn/10Sklearn模型保存与加载.md)
 ### 11 Sklearn应用案例
-[1 Sklearn教程内容](scikit-learn/1Sklearn教程.md)
+[11Sklearn应用案例.md](scikit-learn/11Sklearn应用案例.md)
 ### 12 Sklearn房价预测
-[1 Sklearn教程内容](scikit-learn/1Sklearn教程.md)
+[12Sklearn房价预测.md](scikit-learn/12Sklearn房价预测.md)
 
 ## 二、machine-learning(ML)
 ### 1 机器学习教程
