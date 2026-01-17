@@ -1,6 +1,16 @@
 
+## 一、machine-learning
+### 1 01-machine-learning 机器学习
+### 2 02-data-processing-and-statistics 数据处理与统计
+### 3 03-supervised-learning 监督学习
+### 4 04-unsupervised-learning 无监督学习
+### 5 05-reinforcement-learning 强化学习
+### 6 06-deeping-learning 深度学习
+### 7 07-model-optimization-and-project 模型优化与工程
+### 8 08-limitations-and-boundaries-of-machine-learning 机器学习的限制与边界
+### 9 09-practical-cases-machine-learning 实战案例
 
-## 一、scikit-learn(Sklearn)
+## 二、scikit-learn(Sklearn)
 ### 1 Sklearn教程
 [1 Sklearn教程内容](scikit-learn/1Sklearn教程.md)
 ### 2 Sklearn介绍
@@ -26,16 +36,3 @@
 ### 12 Sklearn房价预测
 [12Sklearn房价预测.md](scikit-learn/12Sklearn房价预测.md)
 
-## 二、machine-learning(ML)
-### 1 机器学习教程
-### 2 机器学习简介
-### 3 机器学习如何工作
-### 4 机器学习基础概念
-### 5 Python入门机器学习
-### 6 机器学习算法
-### 7 线性回归 (Linear Regression)
-### 8 逻辑回归（Logistic Regression）
-### 9 决策树（Decision Tree）
-### 10 支持向量机（SVM Support Vector Machine）
-### 11 K近邻算法(K-Nearest Neighbors，简称 KNN)
-### 12 集成学习（Ensemble Learning）
